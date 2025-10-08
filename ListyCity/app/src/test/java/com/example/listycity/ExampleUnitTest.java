@@ -1,4 +1,4 @@
-package com.example.lab5_starter;
+package com.example.listycity;
 
 import org.junit.Test;
 

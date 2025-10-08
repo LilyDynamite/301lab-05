@@ -1,21 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
-
-    //id("com.android.application")
-
-    // Add the Google services Gradle plugin
-    id("com.google.gms.google-services")
-
 }
 
 android {
-    namespace = "com.example.lab5_starter"
-    compileSdk = 35
+    namespace = "com.example.listycity"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.lab5_starter"
+        applicationId = "com.example.listycity"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -46,10 +40,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-
-    // Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:34.3.0"))
-
-    implementation("com.google.firebase:firebase-firestore")
-
 }
